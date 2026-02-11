@@ -4,6 +4,7 @@ Next.js App Router frontend for Rider + Driver + Merchant in one app.
 
 ## Project References
 
+
 - Supabase project URL: `https://ehtimvlmpghstlzvfipx.supabase.co`
 - GitHub repository: `https://github.com/movinesta/RideIQ`
 
