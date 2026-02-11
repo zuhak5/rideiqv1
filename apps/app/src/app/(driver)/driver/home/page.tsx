@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -74,7 +73,7 @@ export default function DriverHomePage() {
           <Button variant="contained" onClick={toggleOnline}>
             {driver?.status === 'available' ? 'Go offline' : 'Go online'}
           </Button>
-          <Button component={Link} href="/driver/location" variant="outlined">
+          <Button href="/driver/location" variant="outlined">
             Location updates
           </Button>
         </Stack>

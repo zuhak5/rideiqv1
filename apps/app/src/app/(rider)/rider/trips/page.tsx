@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -31,7 +30,7 @@ export default async function RiderTripsPage() {
           <Typography color="text.secondary">
             Fare: {ride.fare_amount_iqd?.toLocaleString() ?? '-'} {ride.currency}
           </Typography>
-          <Button component={Link} href={`/rider/trips/${ride.id}`} sx={{ mt: 1 }}>
+          <Button href={`/rider/trips/${ride.id}`} sx={{ mt: 1 }}>
             Open details
           </Button>
         </Paper>

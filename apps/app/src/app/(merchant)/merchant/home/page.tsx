@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -24,10 +23,10 @@ export default async function MerchantHomePage() {
         <Typography color="text.secondary">Business: {merchant?.business_name ?? 'Not set'}</Typography>
         <Typography color="text.secondary">Status: {merchant?.status ?? 'draft'}</Typography>
         <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
-          <Button component={Link} href="/merchant/profile" variant="contained">
+          <Button href="/merchant/profile" variant="contained">
             Edit profile
           </Button>
-          <Button component={Link} href="/merchant/chat" variant="outlined">
+          <Button href="/merchant/chat" variant="outlined">
             Open chat
           </Button>
         </Stack>

@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -71,7 +70,7 @@ export default function DriverRequestsPage() {
             <Button variant="contained" onClick={() => void accept(row.id)}>
               Accept
             </Button>
-            <Button component={Link} href={`/driver/active/${row.id}`} variant="outlined">
+            <Button href={`/driver/active/${row.id}`} variant="outlined">
               Open
             </Button>
           </Stack>

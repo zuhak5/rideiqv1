@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -50,10 +49,10 @@ export default function RiderEnRoutePage({ params }: { params: Promise<{ request
         <Typography>Status: {status}</Typography>
         {rideId ? (
           <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
-            <Button component={Link} href={`/rider/pickup-verify/${rideId}`} variant="outlined">
+            <Button href={`/rider/pickup-verify/${rideId}`} variant="outlined">
               Pickup PIN
             </Button>
-            <Button component={Link} href={`/rider/in-trip/${rideId}`} variant="contained">
+            <Button href={`/rider/in-trip/${rideId}`} variant="contained">
               Open trip
             </Button>
           </Stack>

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -18,7 +17,7 @@ export default async function RiderHomePage() {
         <Typography color="text.secondary" sx={{ mt: 1 }}>
           Start your ride flow with pickup and destination.
         </Typography>
-        <Button component={Link} href="/rider/pickup" variant="contained" sx={{ mt: 2, minHeight: 44 }}>
+        <Button href="/rider/pickup" variant="contained" sx={{ mt: 2, minHeight: 44 }}>
           Start ride
         </Button>
       </Paper>

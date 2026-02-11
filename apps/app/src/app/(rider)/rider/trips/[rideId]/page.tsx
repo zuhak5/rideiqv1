@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -41,7 +40,7 @@ export default async function RiderTripDetailPage({ params }: { params: Promise<
         <Typography color="text.secondary">Dropoff: {request?.dropoff_address ?? `${request?.dropoff_lat}, ${request?.dropoff_lng}`}</Typography>
       </Paper>
 
-      <Button component={Link} href={`/rider/rate/${rideId}`} variant="contained">
+      <Button href={`/rider/rate/${rideId}`} variant="contained">
         Rate this ride
       </Button>
     </Stack>

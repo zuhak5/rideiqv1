@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -24,7 +23,7 @@ export default async function RiderReceiptPage({ params }: { params: Promise<{ r
         <Typography color="text.secondary">Started: {ride?.started_at ?? '-'}</Typography>
         <Typography color="text.secondary">Completed: {ride?.completed_at ?? '-'}</Typography>
 
-        <Button component={Link} href={`/rider/rate/${rideId}`} variant="contained" sx={{ mt: 2 }}>
+        <Button href={`/rider/rate/${rideId}`} variant="contained" sx={{ mt: 2 }}>
           Rate trip
         </Button>
       </Paper>

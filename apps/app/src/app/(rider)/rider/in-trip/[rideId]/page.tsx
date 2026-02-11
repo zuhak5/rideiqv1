@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import Link from 'next/link';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -63,10 +62,10 @@ export default function RiderInTripPage({ params }: { params: Promise<{ rideId: 
         {error ? <Typography color="error.main">{error}</Typography> : null}
 
         <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
-          <Button component={Link} href={`/rider/safety?rideId=${rideId}`} variant="outlined">
+          <Button href={`/rider/safety?rideId=${rideId}`} variant="outlined">
             Safety tools
           </Button>
-          <Button component={Link} href={`/rider/support?rideId=${rideId}`} variant="outlined">
+          <Button href={`/rider/support?rideId=${rideId}`} variant="outlined">
             Support
           </Button>
           <Button onClick={triggerSos} variant="contained">
@@ -75,7 +74,7 @@ export default function RiderInTripPage({ params }: { params: Promise<{ rideId: 
         </Stack>
 
         {showReceipt ? (
-          <Button component={Link} href={`/rider/receipt/${rideId}`} variant="contained" sx={{ mt: 2 }}>
+          <Button href={`/rider/receipt/${rideId}`} variant="contained" sx={{ mt: 2 }}>
             View receipt
           </Button>
         ) : null}
